@@ -1,6 +1,8 @@
 
 # Password Hashing
-This project is intended to demonstrate basic password cracking with Hascat and it serves as notes for myself.
+This project is intended to demonstrate basic password cracking with Hascat and it serves as notes for myself. 
+
+Make sure to have Hashcat downloaded.
 
 Hashes.txt contains the target hash and rockyou-75.txt contains the wordlist (rockyou-75.txt is the abridged version of rockyou.txt, which is an old list of common passwords). Hascat will attempt these passwords when cracking. Hashcat will also need the following two arguments:
 
