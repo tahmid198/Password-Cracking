@@ -1,5 +1,5 @@
 
-#Password Hashing
+# Password Hashing
 This project is intended to demonstrate basic password cracking with Hascat and it serves as notes for myself.
 
 Hashes.txt contains the target hash and rockyou-75.txt contains the wordlist (rockyou-75.txt is the abridged version of rockyou.txt, which is an old list of common passwords). Hascat will attempt these passwords when cracking. Hashcat will also need the following two arguments:
@@ -9,7 +9,7 @@ Hashes.txt contains the target hash and rockyou-75.txt contains the wordlist (ro
 
 More options information can be found typing `hashcat --help`, 
 
-##Problem 1:
+## Problem 1:
 
 Crack this MD5 hash, 03E4079B565AB2A47A2EFF7F42AE45B8.
 
@@ -24,7 +24,7 @@ Hashcat should output:
 03e4079b565ab2a47a2eff7f42ae45b8:iloveyou!  -> hash:password
 
 
-##Problem 2:
+## Problem 2:
 
 Crack this SHA1 hash, dc6f0dbebfc5747330deeedfbd8475568a740d0a. The following salt value was added 
 *before* the hash, 80808080.
@@ -37,7 +37,7 @@ Hashcat should output:
 
 dc6f0dbebfc5747330deeedfbd8475568a740d0a:80808080:pandemonium  -> (hash:salt:password)
 
-##Problem 3:
+## Problem 3:
 
 Crack this SHA-512 hash, ff8d646ac52b7794adaddaad606042ff6d2d71c5b91cbf1c11d411c790419cf1651ebe71551cd1973abac9d32d1392122cc676f4aa8494e7da6325a1050fd2da. The following salt value was added *after* the hash, 31415926535897932384626433832795028841.
 
@@ -49,7 +49,7 @@ Hashcat should output:
 
 ff8d646ac52b7794adaddaad606042ff6d2d71c5b91cbf1c11d411c790419cf1651ebe71551cd1973abac9d32d1392122cc676f4aa8494e7da6325a1050fd2da:31415926535897932384626433832795028841:oleander -> (hash:salt:password)
 
-##Problem 4:
+## Problem 4:
 
 Crack this unsalted SHA1 hash, 43fb93b0762621345d15386bc9f2e08396a16ef5.
 
