@@ -6,8 +6,9 @@ Make sure to have Hashcat downloaded.
 
 Hashes.txt contains the target hash and rockyou-75.txt contains the wordlist (rockyou-75.txt is the abridged version of rockyou.txt, which is an old list of common passwords). Hascat will attempt these passwords when cracking. Hashcat will also need the following two arguments:
 
->    -m <hash-mode> - the type of hash to crack
->    -a <attack-mode> - the type of attack to run
+>    -m < hash-mode > - the type of hash to crack
+
+>    -a < attack-mode > - the type of attack to run
 
 More options information can be found typing `hashcat --help`, 
 
@@ -59,11 +60,13 @@ The password for this has is not in the rockyou.txt wordlist. We will crack this
 
 
   >  This user has used his phone number as a password on other sites
+
   >  This user lives in California
 
 We will assume that the password is the users 10 digit phone number and use the following mask command ?d, which will specify the type of characters to use. Only digits in this case.
 
 > * Built-in charsets:
+
 >   ?d = 0123456789
 
 To specify the character set for all ten digits of the phone number we do ?d?d?d?d?d?d?d?d?d?d
