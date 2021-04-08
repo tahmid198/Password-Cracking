@@ -6,7 +6,7 @@ Make sure to have Hashcat downloaded.
 
 To download on macOS use a package manager such as homebrew and type `brew install hascat` in terminal. 
 
-hascat command = hashcat -m < hash-mode> -a < attack-mode >
+hascat command = `hashcat -m < hash-mode> -a < attack-mode >`
 
 
 
