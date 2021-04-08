@@ -4,9 +4,9 @@ This project is intended to demonstrate basic password cracking with Hascat and 
 
 Make sure to have Hashcat downloaded.
 
-To download on macOS use a package manager such as homebrew and type `brew install hascat` in terminal. 
+To download on macOS use a package manager such as Homebrew and type `brew install hashcat` in terminal. On windows you can use a package manager such as Chocolatey and type `choco install hashcat` in command shell. Or you can just download the binaries directly from the Hashcat website linked below. 
 
-hascat command = `hashcat -m < hash-mode> -a < attack-mode >`
+Can be ran anywhere with hascat command = `hashcat -m < hash-mode> -a < attack-mode >`
 
 
 
