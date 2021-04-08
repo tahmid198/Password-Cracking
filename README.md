@@ -4,6 +4,12 @@ This project is intended to demonstrate basic password cracking with Hascat and 
 
 Make sure to have Hashcat downloaded.
 
+To download on macOS use a package manager such as homebrew and type `brew install hascat` in terminal. 
+
+hascat command = hashcat -m < hash-mode> -a < attack-mode >
+
+
+
 Hashes.txt contains the target hash and rockyou-75.txt contains the wordlist (rockyou-75.txt is the abridged version of rockyou.txt, which is an old list of common passwords). Hascat will attempt these passwords when cracking. Hashcat will also need the following two arguments:
 
 >    -m < hash-mode > - the type of hash to crack
@@ -65,7 +71,7 @@ The password for this has is not in the rockyou.txt wordlist. We will crack this
 
 We will assume that the password is the users 10 digit phone number and use the following mask command ?d, which will specify the type of characters to use. Only digits in this case.
 
-> * Built-in charsets:
+ * Built-in charsets:
 
 >   ?d = 0123456789
 
@@ -81,9 +87,11 @@ Hashcat should output:
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+**Resources:**
 
+[Hashcat Website](https://hashcat.net/hashcat/)
 
-Hash types and more information can be found here https://hashcat.net/wiki/doku.php?id=example_hashes
+[Hash types and more information can be found here](https://hashcat.net/wiki/doku.php?id=example_hashes)
 
 
 
