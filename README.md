@@ -66,7 +66,7 @@ Note: hashes.txt should contain the hash in the following syntax hashes:salt or 
 
 Crack this unsalted SHA1 hash, 43fb93b0762621345d15386bc9f2e08396a16ef5.
 
-The password for this has is not in the rockyou.txt wordlist. We will crack this password using the given 2 hints.
+The password for this has is not in the rockyou-75.txt wordlist. We will crack this password using the given 2 hints.
 
 
   >  This user has used his phone number as a password on other sites
