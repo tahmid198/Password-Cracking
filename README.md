@@ -46,6 +46,8 @@ Hashcat should output:
 
 dc6f0dbebfc5747330deeedfbd8475568a740d0a:80808080:pandemonium  -> (hash:salt:password)
 
+Note: hashes.txt should contain the hash in the following syntax hashes:salt or Hashcat will throw a "Separator unmatched" warning
+
 ## Problem 3:
 
 Crack this SHA-512 hash, ff8d646ac52b7794adaddaad606042ff6d2d71c5b91cbf1c11d411c790419cf1651ebe71551cd1973abac9d32d1392122cc676f4aa8494e7da6325a1050fd2da. The following salt value was added *after* the hash, 31415926535897932384626433832795028841.
@@ -57,6 +59,8 @@ For this problem we will use a hash-mode 1710 (sha512($pass.$salt)) and attack-m
 Hashcat should output:
 
 ff8d646ac52b7794adaddaad606042ff6d2d71c5b91cbf1c11d411c790419cf1651ebe71551cd1973abac9d32d1392122cc676f4aa8494e7da6325a1050fd2da:31415926535897932384626433832795028841:oleander -> (hash:salt:password)
+
+Note: hashes.txt should contain the hash in the following syntax hashes:salt or Hashcat will throw a "Separator unmatched" warning
 
 ## Problem 4:
 
